@@ -1,0 +1,29 @@
+{
+    "name": "gglerum/twill-basic-setup",
+    "description": "A basic Laravel configuration with Twill",
+    "keywords": ["laravel", "twill"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Glenn Glerum",
+            "email": "gglerum@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "laravel/framework": "^9.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "GGlerum\\TwillBase\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GGlerum\\TwillBase\\TwillBaseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
